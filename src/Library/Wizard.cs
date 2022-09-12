@@ -1,9 +1,11 @@
-namespace Test.Library
+namespace MonosAnillos
+using System;
+using System.Collections.Generic;
 {
     class Wizard{
         string Name {get; set;}
         int Hp {get; set;}
-        List<Item> Items {get; set;}
+        List <Item> Items {get; set;}
 
         public Wizard( string nombre,int salud){
             this.Name=nombre;
