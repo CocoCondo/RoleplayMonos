@@ -18,7 +18,7 @@ using System.Collections.Generic;
         }
         public static void Add_Item(Wizard wiz, Item item){
             if(wiz.Items.Contains(item)){
-            wiz.Items.remove(item);
+            wiz.Items.Remove(item);
             }
         
         }
