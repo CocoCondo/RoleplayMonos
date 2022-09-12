@@ -2,16 +2,14 @@ namespace MonosAnillos;
 using System;
 using System.Collections.Generic;
 
-class Item
+class Shield
 {
     private string Name {get; set;}
-    private int Dmg {get; set;}
     private int Def {get; set;}
 
-    public Item(string name, int dmg, int def)
+    public Shield(string name, int def)
     {
         this.Name = name;
-        this.Dmg = dmg;
         this.Def = def;
     }
 }
