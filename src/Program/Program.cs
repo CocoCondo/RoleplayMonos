@@ -1,4 +1,5 @@
-﻿using System;
+﻿namespace MonosAnillos;
+using System;
 
 namespace Program
 {
