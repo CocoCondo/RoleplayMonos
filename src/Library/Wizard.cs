@@ -1,7 +1,8 @@
-namespace MonosAnillos
+
 using System;
 using System.Collections.Generic;
-{
+namespace MonosAnillos;
+
     class Wizard{
         string Name {get; set;}
         int Hp {get; set;}
@@ -14,7 +15,7 @@ using System.Collections.Generic;
         }
         
         public void Add_Item(Item item){
-            this.Items.add(item);
+            this.Items.Add(item);
         }
         public static void Add_Item(Wizard wiz, Item item){
             if(wiz.Items.Contains(item)){
@@ -23,4 +24,3 @@ using System.Collections.Generic;
         
         }
     }
-}
