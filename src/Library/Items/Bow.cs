@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 class Bow
 {
-    public int Attack {get; set;}
-    public string Name  {get; set;}
-    public int Defense {get; set;}
+    private int Attack {get; set;}
+    private string Name  {get; set;}
+    private int Defense {get; set;}
 
     public Bow (string name, int attack, int defense)
     {
