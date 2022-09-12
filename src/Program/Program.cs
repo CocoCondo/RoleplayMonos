@@ -1,13 +1,12 @@
-﻿namespace MonosAnillos;
-using System;
+﻿using System;
 
-namespace Program
+namespace MonosAnillos
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
+            Spell fusrodah = new MonosAnillos.Spell 
         }
     }
 }

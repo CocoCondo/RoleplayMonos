@@ -1,7 +1,8 @@
 
 using System;
 using System.Collections.Generic;
-namespace MonosAnillos;
+namespace MonosAnillos
+{
 
     class Wizard{
         string Name {get; set;}
@@ -28,3 +29,4 @@ namespace MonosAnillos;
         }
         
     }
+}

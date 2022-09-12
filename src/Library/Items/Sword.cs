@@ -1,8 +1,10 @@
-namespace MonosAnillos;
+
 using System;
 using System.Collections.Generic;
 
-class Sword
+namespace MonosAnillos
+{
+    class Sword
 {
     private string Name {get; set;}
     private int Dmg {get; set;}
@@ -15,3 +17,5 @@ class Sword
         this.Def = def;
     }
 }
+}
+

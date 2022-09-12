@@ -1,7 +1,9 @@
-namespace MonosAnillos;
+
 using System;
 using System.Collections.Generic;
 
+namespace MonosAnillos
+{
 class Bow
 {
     private int Attack {get; set;}
@@ -27,5 +29,7 @@ class Bow
     {
         return this.Defense;
     }
+
+}
 
 }

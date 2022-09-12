@@ -1,8 +1,10 @@
-namespace MonosAnillos;
+
 using System;
 using System.Collections.Generic;
 
-class Scepter
+namespace MonosAnillos
+{
+    class Scepter
 {
     private string Name {get; set;}
     private int Dmg {get; set;}
@@ -14,4 +16,6 @@ class Scepter
         this.Dmg = dmg;
         this.Def = def;
     }
+}
+
 }

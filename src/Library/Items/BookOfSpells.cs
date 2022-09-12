@@ -1,9 +1,10 @@
-namespace MonosAnillos;
 using System;
 using System.Collections.Generic;
 
-class BookOfSpells
+namespace MonosAnillos
 {
+    class BookOfSpells
+    {
     private string Name {get; set;}
     private int Dmg {get; set;}
     private int Def {get; set;}
@@ -20,4 +21,6 @@ class BookOfSpells
     {
         this.Spells.Add(spell);
     }
+    }
+
 }

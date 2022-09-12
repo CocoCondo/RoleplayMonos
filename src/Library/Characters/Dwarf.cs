@@ -1,8 +1,8 @@
 
 using System;
 using System.Collections.Generic;
-namespace MonosAnillos;
-
+namespace MonosAnillos
+{
     class Dwarf{
         string Name {get; set;}
         int Hp {get; set;}
@@ -24,3 +24,4 @@ namespace MonosAnillos;
         
         }
     }
+}

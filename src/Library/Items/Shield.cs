@@ -1,8 +1,10 @@
-namespace MonosAnillos;
+
 using System;
 using System.Collections.Generic;
 
-class Shield
+namespace MonosAnillos
+{
+    class Shield
 {
     private string Name {get; set;}
     private int Def {get; set;}
@@ -13,3 +15,5 @@ class Shield
         this.Def = def;
     }
 }
+}
+
