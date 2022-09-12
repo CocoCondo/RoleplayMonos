@@ -15,7 +15,7 @@ namespace Test.Library
             this.Items.add(item);
         }
         public static void Add_Item(Wizard wiz, Item item){
-            if(item in wiz.Items){
+            if(wiz.Items.Contains(item)){
             wiz.Items.remove(item);
             }
         
