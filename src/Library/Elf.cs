@@ -11,13 +11,15 @@ namespace MonosAnillos
 
         public int Defense {get; set;}
 
-        List <string> items= new List<string>();
+        private List<Object> ItemsElves {get; set;}
+        List<Object> itemsElves = new List<Object>();
         public Elf (string nombre )
         {   
             this.Nombre= nombre;
             this.HP= 100;
             this.Attack= 50;
             this.Defense= 25;
+            this.ItemsElves = itemsElves;
         }
 
         public int GetDamage
@@ -43,15 +45,7 @@ namespace MonosAnillos
             }
         }
 
-        public void AddItem (item)
-        {
-            items.Add(item);
-        }
-
-        public void RemoveItem(item)
-        {
-            items.Remove(item);
-        }
+       public void Add_Item(Item item)
 
     }
 }
