@@ -2,50 +2,36 @@ using System;
 using System.Collections.Generic;
 namespace MonosAnillos
 {
-    class Elf
+    class Elf : ICharacters
     {
-        public string Nombre  {get; set;}
+        public string Name  {get; set;}
         public int HP{get; set;}
-
         public int Attack {get; set;}
-
         public int Defense {get; set;}
+        public List <IItem> Items {get; set;}
 
-        private List<Object> ItemsElves {get; set;}
-        List<Object> itemsElves = new List<Object>();
         public Elf (string nombre )
         {   
-            this.Nombre= nombre;
+            this.Name= nombre;
             this.HP= 100;
             this.Attack= 50;
             this.Defense= 25;
-            this.ItemsElves = itemsElves;
         }
 
-        public int GetDamage
-        {
-            get
-            {
-                return this.Attack;
-            }
+        public void Attacking(ICharacters target){
+            target.HP=target.HP-this.Attack;
         }
-        public int GetDefense
-        {
-            get
-            {
-                return this.Defense;
-            }
+        public void Healing(ICharacters target, int valor){
+            target.HP=target.HP+valor;
         }
-
-        public int GetHP
-        {
-            get
-            {
-                return this.HP;
-            }
+        public void Add_Item(IItem item){
+            this.Items.Add(item);
         }
-
-       //public void Add_Item(Item item)
+        public void Remove_Item(IItem item){
+            if(this.Items.Contains(item)){
+            this.Items.Remove(item);
+            }
 
     }
+}
 }
