@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 namespace MonosAnillos
 {   
-    class AttackDefenceItem : IItem
+    class AttackDefenceItem : IAttackItem, IDefenceItem
     {
         public string Name {get;}
         public string Description {get;}
@@ -10,9 +10,10 @@ namespace MonosAnillos
         public int Dmg {get;}
         public int Def {get;}
 
-        public AttackDefenceItem(string name, int dmg, int def, bool isitemmagical)
+        public AttackDefenceItem(string name, string description, int dmg, int def, bool isitemmagical)
         {
             this.Name = name;
+            this.Description = description;
             this.Dmg = dmg;
             this.Def = def;
             this.IsItemMagical = isitemmagical;

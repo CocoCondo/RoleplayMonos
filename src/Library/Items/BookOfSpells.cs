@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MonosAnillos
 {
-    class BookOfSpells : IItem
+    class BookOfSpells : IAttackItem
     {
         public string Name {get;}
         public string Description {get;}
@@ -12,11 +12,13 @@ namespace MonosAnillos
         public int Def {get;}
         public List<Spell> Spells {get; set;}
 
-        public BookOfSpells(string name, int dmg, int def)
+        public BookOfSpells(string name, string description, int dmg, int def, bool isitemmagical)
         {
             this.Name = name;
+            this.Description = description;
             this.Dmg = dmg;
             this.Def = def;
+            this.IsItemMagical = isitemmagical;
         }
         public void AddSpell(Spell spell)
         {
