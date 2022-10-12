@@ -4,18 +4,18 @@ using System.Collections.Generic;
 
 namespace MonosAnillos
 {
-    class Scepter
-{
-    private string Name {get; set;}
-    private int Dmg {get; set;}
-    private int Def {get; set;}
-
-    public Scepter(string name, int dmg, int def)
+    class Scepter : IItem
     {
-        this.Name = name;
-        this.Dmg = dmg;
-        this.Def = def;
+        public string Name {get;}
+        public int Dmg {get;}
+        public int Def {get;}
+
+        public Scepter(string name, int dmg, int def)
+        {
+            this.Name = name;
+            this.Dmg = dmg;
+            this.Def = def;
+        }
     }
-}
 
 }

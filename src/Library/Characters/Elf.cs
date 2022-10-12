@@ -45,7 +45,7 @@ namespace MonosAnillos
             }
         }
 
-       public void Add_Item(Item item)
+       //public void Add_Item(Item item)
 
     }
 }

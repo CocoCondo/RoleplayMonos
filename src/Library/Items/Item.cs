@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 namespace MonosAnillos
 {   
-    class Item
+    class Item : IItem
     {
-        private string Name {get; set;}
-        private int Dmg {get; set;}
-        private int Def {get; set;}
+        public string Name {get;}
+        public int Dmg {get;}
+        public int Def {get;}
 
         public Item(string name, int dmg, int def)
         {

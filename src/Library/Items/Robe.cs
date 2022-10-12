@@ -4,18 +4,18 @@ using System.Collections.Generic;
 
 namespace MonosAnillos
 {
-    class Robe
+    class Robe : IItem
     {
-    private string Name {get; set;}
-    private int Dmg {get; set;}
-    private int Def {get; set;}
+        public string Name {get;}
+        public int Dmg {get;}
+        public int Def {get;}
 
-    public Robe(string name, int dmg, int def)
-    {
-        this.Name = name;
-        this.Dmg = dmg;
-        this.Def = def;
-    }
+        public Robe(string name, int dmg, int def)
+        {
+            this.Name = name;
+            this.Dmg = dmg;
+            this.Def = def;
+        }
     }
 }
 

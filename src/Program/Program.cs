@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace MonosAnillos
+namespace MonosAnillosProgram
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Spell fusrodah = new MonosAnillos.Spell 
+        
         }
     }
 }
