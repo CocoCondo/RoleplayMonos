@@ -6,6 +6,8 @@ namespace MonosAnillos
     class BookOfSpells : IItem
     {
         public string Name {get;}
+        public string Description {get;}
+        public bool IsItemMagical {get;}
         public int Dmg {get;}
         public int Def {get;}
         public List<Spell> Spells {get; set;}
@@ -16,7 +18,6 @@ namespace MonosAnillos
             this.Dmg = dmg;
             this.Def = def;
         }
-
         public void AddSpell(Spell spell)
         {
             this.Spells.Add(spell);
