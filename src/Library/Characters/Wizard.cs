@@ -15,10 +15,8 @@ namespace MonosAnillos
         public Wizard( string nombre,int salud){
             this.Name=nombre;
             this.HP=salud;
-            this.Attack=0;
-
+            this.Attack=0;}
         }
-        
         public void Attacking(ICharacters target){
             target.HP=target.HP-this.Attack;
         }

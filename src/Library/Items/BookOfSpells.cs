@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace MonosAnillos
 {
-    class BookOfSpells : IAttackItem
+    class BookOfSpells : IAttackItem, IDefenceItem
     {
         public string Name {get;}
         public string Description {get;}
         public bool IsItemMagical {get;}
         public int Dmg {get;}
         public int Def {get;}
-        public List<Spell> Spells {get; set;}
+        public List<Spell> Spells {get;}
 
         public BookOfSpells(string name, string description, int dmg, int def, bool isitemmagical)
         {
