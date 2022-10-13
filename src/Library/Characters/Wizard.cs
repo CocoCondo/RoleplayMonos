@@ -4,10 +4,9 @@ using System.Collections.Generic;
 namespace MonosAnillos
 {
 
-    class Wizard: ICharacters,IMagic_User{
+    class Wizard: ICharacters{
         public string Name  {get; set;}
         public int HP{get; set;}
-        public int MP{get; set;}
         public int Attack {get; set;}
         public int Defense {get; set;}
         public List <IItem> Items {get; set;}
