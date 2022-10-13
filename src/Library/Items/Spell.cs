@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MonosAnillos
 {
-    class Spell : IAttackItem
+    public class Spell : IAttackItem
     {
         public string Name {get;}
         public string Description {get;}

@@ -2,14 +2,14 @@ using System;
 using System.Collections.Generic;
 namespace MonosAnillos
 {   
-    class AttackItem : IAttackItem
+    public class AttackItem : IAttackItem
     {
         public string Name {get;}
         public string Description {get;}
         public bool IsItemMagical {get;}
         public int Dmg {get;}
 
-        public AttackItem(string name, string description, int dmg, int def, bool isitemmagical)
+        public AttackItem(string name, string description, int dmg, bool isitemmagical)
         {
             this.Name = name;
             this.Description = description;
