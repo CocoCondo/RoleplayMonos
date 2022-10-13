@@ -14,15 +14,10 @@ namespace MonosAnillos
 
         public Wizard( string nombre){
             this.Name=nombre;
-<<<<<<< HEAD
-            this.HP=salud;
-            this.Attack=0;}
-=======
             this.HP=70;
             this.Attack=60;
             this.Defense=10;
 
->>>>>>> 6db09efe87121f9bf4cb7d2c105b321d5133fdce
         }
         public void Attacking(ICharacters target){
             if(target.Defense<this.Attack){

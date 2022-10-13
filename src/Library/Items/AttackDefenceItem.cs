@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 namespace MonosAnillos
 {   
-    class AttackDefenceItem : IAttackItem, IDefenceItem
+    public class AttackDefenceItem : IAttackItem, IDefenceItem
     {
         public string Name {get;}
         public string Description {get;}

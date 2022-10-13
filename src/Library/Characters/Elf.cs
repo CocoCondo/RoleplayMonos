@@ -27,12 +27,19 @@ namespace MonosAnillos
             target.HP=target.HP+valor;
         }
         public void Add_Item(IItem item){
-            this.Items.Add(item);
-            if((item is IAttackItem)){
-                this.Attack=(item as IAttackItem).Dmg+this.Attack;
+            if (!item.IsItemMagical)
+            {
+                this.Items.Add(item);
+                if((item is IAttackItem)){
+                    this.Attack=(item as IAttackItem).Dmg+this.Attack;
+                }
+                if((item is IDefenceItem)){
+                    this.Defense=(item as IDefenceItem).Def+this.Defense;
+                }
             }
-            if((item is IDefenceItem)){
-                this.Defense=(item as IDefenceItem).Def+this.Defense;
+            else
+            {
+                Console.WriteLine($"ERROR: Item {item} is magical.");
             }
         }
         public void Remove_Item(IItem item){
