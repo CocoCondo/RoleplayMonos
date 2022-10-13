@@ -10,7 +10,7 @@ namespace MonosAnillos
         public bool IsItemMagical {get;}
         public int Dmg {get;}
         public int Def {get;}
-        public List<Spell> Spells {get; set;}
+        public List<Spell> Spells {get;}
 
         public BookOfSpells(string name, string description, int dmg, int def, bool isitemmagical)
         {
